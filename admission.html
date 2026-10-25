@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: lightyellow;
+        }
+        .main {
+            width: 100%;
+            max-width: 420px;
+            padding: 20px;
+        }
+        .title {
+            color: black;
+            font-size: 38px;
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        .card {
+            background: white;
+            padding: 35px;
+            border: 3px solid black;
+            border-radius: 16px;
+        }
+        .heading {
+            margin-bottom: 25px;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .box {
+            margin-bottom: 20px;
+        }
+        .box label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .field {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 14px;
+            background-color: white;
+            color: black;
+        }
+        .field:focus {
+            border-color: black;
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: lightskyblue;
+            color: black;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .btn:hover {
+            background: #0369a1;
+            color: white;
+        }
+        .link-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 15px;
+            color: #64748b;
+        }
+        .link-text a {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .link-text a:hover {
+            text-decoration: underline;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+      
+        <h3 class="title">Lucksman's Sports</h3>
+        <div class="card">
+         
+            <h2 class="heading">Register Here</h2>
+<form onsubmit="sendMail(event)"> 
+        
+
+        <div class="box"> 
+            <input type="text" id="username" name="name" class="field" placeholder="Enter your full name" required> 
+        </div> 
+
+       
+        <div class="box"> 
+            <input type="text" id="position" name="sports" class="field" list="sports-options" placeholder="What sports do you like?">
+            <datalist id="sports-options">
+                <option value="Volleyball">
+                <option value="Football">
+                <option value="Cricket">
+                <option value="Kabaddi">
+                <option value="Athletes">
+                <option value="Basketball">
+            </datalist>
+        </div> 
+
+    
+        <div class="box"> 
+            <input type="tel" name="contact" class="field" placeholder="Enter your Contact"> 
+        </div> 
+
+    
+        <div class="box"> 
+            <input type="text"  name="feedback" class="field" placeholder="Enter your feedback">
+        </div> 
+
+      
+        <div class="box">
+            <input type="submit" class="btn" value="Submit"> 
+        </div>
+        
+    </form>
+           
+            <div class="link-text">Go to Home Page<a href="../index.html" <br>   Return Back</a></div>
+
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("57e_UJYVw3Ug7Kwd6");
+  })();
+</script>
+<script>
+  function sendMail(event) {
+    event.preventDefault();
+    emailjs
+      .sendForm(
+        "service_msxyo2k",
+        "template_irx08pc",
+        event.target
+      )
+      .then(
+        function () {
+          alert("Message sent successfully!");
+          event.target.reset();
+        },
+        function (error) {
+          alert("Failed to send message");
+          console.error(error);
+        }
+      );
+  }
+</script>
+</html>
