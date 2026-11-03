@@ -7,6 +7,10 @@ body {
   font-size: 30px;
   color: #1e2a44;
 }
+/*
+this is all navbar for all the files  
+ */
+
 .menu a {
   margin-left: 30px;
   text-decoration: none;
@@ -17,18 +21,7 @@ body {
 .menu a:hover {
   color: red;
 }
-.menu .active {
-  color: red;
-}
-.banner {
-  background-color: #359fa0;
-  display: flex;
-  justify-content: center;
-}
-.banner h1 {
-  color: white;
-  font-size: 60px;
-}
+
 .schedule {
   text-align: center;
   padding: 50px;
@@ -49,6 +42,7 @@ body {
   font-family: Arial, sans-serif;
   color: #333333;
 }
+/* this is all drop down content css for file */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -84,21 +78,15 @@ body {
   font-weight: bold;
   color: #0b4a94;
 }
-.blue-title h1 {
-  margin: 0;
-  font-size: 50px;
-}
+
 .intro-box {
   display: flex;
   padding: 70px 60px;
 }
-.intro-left-side {
-  width: 50%;
+.my-academy p{
+  margin-left: 40px;
 }
-.intro-right-side {
-  width: 50%;
-}
-.intro-big-heading {
+.myself{
   font-size: 42px;
   margin: 0;
   color: darkred;
@@ -110,9 +98,9 @@ body {
 .rohit {
   width: 500px;
   height: 400px;
-  padding-right: 20%;
+  padding-right: 15%;
 }
-.motto-list-side {
+.motto-list {
   width: 55%;
 }
 .motto-heading {
@@ -155,6 +143,7 @@ body {
   text-align: center;
   padding: 80px 20px;
 }
+
 .banner h1 {
   color: white;
   font-size: 60px;
@@ -171,6 +160,7 @@ body {
 .leftu img {
   width: 120%;
   height: 600px;
+  border-radius: 40px;
 }
 .rightu {
   width: 50%;
@@ -235,31 +225,9 @@ body {
 .left li {
   font-size: 17px;
   line-height: 30px;
+  
 }
-.subscribe {
-  background-color: #0d4a7a;
-  text-align: center;
-  padding: 80px;
-}
-.subscribe h2 {
-  color: white;
-  font-size: 38px;
-}
-.subscribe input {
-  width: 600px;
-  padding: 15px;
-  border: none;
-}
-.subscribe button {
-  background-color: red;
-  color: white;
-  padding: 15px 35px;
-  font-weight: bold;
-}
-.footer {
-  display: flex;
-  padding: 80px;
-}
+
 .box {
   width: 33%;
   padding-right: 30px;
@@ -270,11 +238,6 @@ body {
 }
 .box li {
   padding: 10px;
-}
-.nun {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 15px;
 }
 .bottom {
   text-align: center;
@@ -422,7 +385,10 @@ body {
   font-size: 26px;
   color: #0a4d8c ;
 }
+/* this is the subcriber details for all css files  */
+
 .subscribe {
+  padding: 80px;
   background-color: #f5eaf0;
   height: 250px;
   text-align: center;
@@ -449,6 +415,7 @@ body {
   margin-top: 50px;
   padding-left: 10px;
   border: none;
+  padding: 15px;
 }
 .subscribe button {
   background-color: #d6254b;
@@ -461,7 +428,12 @@ body {
   margin-left: 10px;
   padding: 10px;
 }
+/* 
+this is the footer css for all the page  
+*/
 .footer {
+  display: flex;
+  padding: 80px;
   height: 480px;
   margin-top: 60px;
   margin-left: 100px;
@@ -497,6 +469,9 @@ body {
   width: 300px;
   margin-left: 60px;
 }
+/*
+this is all footer navigation for all page 
+ */
 .bottom {
   text-align: center;
   height: 200px;
@@ -511,9 +486,7 @@ body {
 .bottom-menu a:hover {
   color: red;
 }
-.bottom-menu a :active {
-  color: red;
-}
+
 .copy .p {
   font-size: 20px;
 }
