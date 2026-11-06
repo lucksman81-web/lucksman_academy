@@ -1,148 +1,210 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Contact - Lucksman's Sports Academy </title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <img
-        class="logo"
-        src="assets/newn.png"
-      />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
 
-      <div class="menu">
-        <a
-          href="index.html"
-          >HOME</a
-        >
-        <a
-          href="about.html"
-          class="this-page"
-          >ABOUT</a
-        >
-        <div class="dropdown">
-          <a class="morethings" href="#">PROGRAMMES</a>
-          <div class="dropdown-content">
-            <a
-              href="kids.html"
-              >KIDS PROGRAMMES</a
-            >
-            <a
-              href="youth.html"
-              >YOUTH PROGRAMMES</a
-            >
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
 
-            <a
-              href="admission.html"
-              >ADMISSION FORM</a
-            >
-          </div>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:#e8c9d4 ;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .main {
+            width: 700px;
+            width: 50%;
+            padding: 20px;
+        }
+        .main p{
+          text-align: center;
+          font-weight: 500;   
+        }
+
+        .title {
+            color: black;
+            font-size: 38px;
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+        }
+        .card p{
+            font-weight: 700;
+        }
+
+        .heading {
+            margin-bottom: 30px;
+            color: black;
+            font-size: 28px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .box {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .field {
+            width: 100%;
+            height: 65px;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: white;
+            color: black;
+        }
+
+        .btn {
+            width: 100%;
+            height: 65px;
+            padding: 15px;
+            background: lightskyblue;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+            color: white;
+        }
+
+        .link-text {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 16px;
+            color: #64748b;
+        }
+
+        .link-text a {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .link-text a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <h3 class="title">LUCKSMAN'S SPORTS</h3>
+        
+
+        <div class="card">
+           <p>FOR MORE DETAILS</p>
+            <h2 class="heading">Register Here</h2>
+
+            <form onsubmit="sendMail(event)">
+
+                <div class="box">
+                    <input type="text" id="username" name="name"
+                    class="field" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="box">
+                    <input type="text" id="position" name="sports"
+                    class="field" list="sports-options"
+                    placeholder="What sports do you like?">
+
+                    <datalist id="sports-options">
+                        <option value="Volleyball"></option>
+                        <option value="Football"></option>
+                        <option value="Cricket"></option>
+                        <option value="Kabaddi"></option>
+                        <option value="Athletics"></option>
+                        <option value="Basketball"></option>
+                    </datalist>
+                </div>
+
+                <div class="box">
+                    <input type="tel" name="contact"
+                    class="field" placeholder="Enter your Contact">
+                </div>
+
+                <div class="box">
+                    <input type="text" name="feedback"
+                    class="field" placeholder="Enter your feedback">
+                </div>
+
+                <div class="box">
+                    <input type="submit" class="btn" value="Submit">
+                </div>
+
+            </form>
+
+            <div class="link-text">
+                Go to Home Page?
+                <a href="index.html">Return Back</a>
+            </div>
+
         </div>
-        <a
-          href="training.html"
-          >TRAINING</a
-        >
-        <a
-          href="cantact.html"
-          >CONTACT</a
-        >
-      </div>
     </div>
 
-    <div class="top">
-      <h1>Contact Us</h1>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-    <div class="schedule">
-      <h2>SCHEDULE TIME FOR THE ACADEMY</h2>
-      <p>
-        Trainings are available for above 6 years kids (Both boys and girls)
-      </p>
+    <script>
+        (function () {
+            emailjs.init("57e_UJYVw3Ug7Kwd6");
+        })();
 
-      <div class="boxes">
-        <div class="box">
-          <h3>Monday to Friday</h3>
-          <p>Morning 5:45 A.M. to 7:15 A.M.</p>
-          <p>Evening 5:00 P.M. to 6:30 P.M.</p>
-        </div>
+        function sendMail(event) {
 
-        <div class="box">
-          <h3>Saturday to Sunday</h3>
-          <p>Morning 6:00 A.M. to 7:00 A.M.</p>
-          <p>Evening 5:00 P.M. to 6:00 P.M.</p>
-        </div>
-      </div>
-    </div>
-    <div class="subscribe">
-      <hr />
-      <h2>Wish to know more about our trainings & classes? Subscribe now!</h2>
-      <input type="text" placeholder="Email address" />
-      <button>Subscribe</button>
-    </div>
+            event.preventDefault();
 
-    <div class="footer">
-      <div class="footer-box1">
-        <h2>Lucksman's Sports Academy</h2>
-        <p>
-          At lucksman's Sports Academy, we are building the Olympians of Tomorrow. We
-          also provide intensive training for fitness & health of every
-          individual.
-        </p>
-        <p><b>For Enquiries, drop by</b></p>
-        <p>4, Gowriwakkam, Sembakkam, Chennai, Tamil Nadu - 600 073.</p>
-        <p>Arun Excello Temple Green H-6, Mathur, Tamil Nadu 631604</p>
-        <p><b>Or Call us at</b></p>
-        <p>+91-95 0019 3582</p>
-        <p>+91-63 6931 0743</p>
-      </div>
+            emailjs.sendForm(
+                "service_msxyo2k",
+                "template_irx08pc",
+                event.target
+            )
+            .then(
+                function () {
+                    alert("Message sent successfully!");
+                    event.target.reset();
+                },
+                function (error) {
+                    alert("Failed to send message");
+                    console.error(error);
+                }
+            );
+        }
+    </script>
 
-      <div class="footer-box2">
-        <h2>Branches</h2>
-        <p>We have branches at 6 important location of the city.</p>
-        <ol>
-          <li>Tirupattur</li>
-          <li>Vellore</li>
-          <li>Chennai</li>
-          <li>Mambakkam</li>
-          <li>Thiruvannamali</li>
-          <li>Salem</li>
-          <li>Perungalathur</li>
-        </ol>
-      </div>
-
-      <div class="footer-box3">
-        <h2>Trainings</h2>
-        <p>Track & Field - Sprint, Jump & Throws Coaching</p>
-        <p>Personal Fitness</p>
-        <p>Gymnastics & Yoga</p>
-        <p>General Fitness</p>
-        <p>Archery & Physiotherapy</p>
-        <p>Adults Fitness</p>
-        <p>Martial Arts Taekwondo</p>
-        <p>Football & Cricket</p>
-        <p>Tennis & Kabaddi</p>
-        <p>Karate & Silambam</p>
-        <p>Boxing & Judo</p>
-      </div>
-    </div>
-
-    <div class="bottom">
-      <div class="bottom-menu">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="kids.html">PROGRAMMES</a>
-        <a href="training.html">TRAINING</a>
-        <a href="cantact.html">CONTACT</a>
-      </div>
-
-      <p class="copy">
-        Copyright © 2026 Malai Sports Academy | Designed & Developed by Creative
-        Loris
-      </p>
-    </div>
-  </body>
-</html>
-
-  </body>
+</body>
 </html>

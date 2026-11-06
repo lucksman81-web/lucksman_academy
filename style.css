@@ -50,8 +50,8 @@ body {
 
 .dropdown-content {
   display: none;
-  position:absolute;
-  background-color:rgb(255, 232, 196);
+  position: absolute;
+  background-color: rgb(255, 232, 196);
   top: 100%;
   border-radius: 8px;
 }
@@ -64,9 +64,8 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color:#e8c9d4;
+  background-color: #e8c9d4;
   text-decoration: none;
-  
 }
 
 .dropdown:hover .dropdown-content {
@@ -83,10 +82,10 @@ body {
   display: flex;
   padding: 70px 60px;
 }
-.my-academy p{
+.my-academy p {
   margin-left: 40px;
 }
-.myself{
+.myself {
   font-size: 42px;
   margin: 0;
   color: darkred;
@@ -126,7 +125,7 @@ body {
   width: 30%;
   color: black;
   font-size: 24px;
-  font-weight:600;
+  font-weight: 600;
 }
 .statement-words {
   width: 70%;
@@ -213,7 +212,7 @@ body {
   padding-left: 230px;
   width: 50%;
 }
-.rightu img{
+.rightu img {
   border-radius: 50px;
 }
 .left h2 {
@@ -225,7 +224,6 @@ body {
 .left li {
   font-size: 17px;
   line-height: 30px;
-  
 }
 
 .box {
@@ -244,19 +242,19 @@ body {
   padding-bottom: 30px;
   font-weight: 700;
   font-size: 19px;
-} 
+}
 
 /* This is training programmes page CSS */
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color:#e8c9d4 ;
+  background-color: #e8c9d4;
   color: #555555;
 }
 .header {
-    background-color: #e8c9d4;
-  height: 120px
+  background-color: #e8c9d4;
+  height: 120px;
 }
 
 .logo {
@@ -264,7 +262,6 @@ body {
   width: 130px;
   margin-top: 10px;
   margin-left: 60px;
- 
 }
 
 .active {
@@ -276,7 +273,7 @@ body {
   text-align: center;
 }
 .top h1 {
-  color:darkred;
+  color: darkred;
   font-size: 60px;
   padding-top: 90px;
   margin: 0;
@@ -311,7 +308,7 @@ body {
   font-size: 45px;
   color: darkred;
 }
-.commitment h4{
+.commitment h4 {
   font-size: large;
 }
 .commitment hr {
@@ -324,8 +321,8 @@ body {
 }
 .trainings h2 {
   font-size: 45px;
-  color:darkred;
-  font-family:sans-serif;
+  color: darkred;
+  font-family: sans-serif;
 }
 .trainings hr {
   width: 300px;
@@ -362,7 +359,7 @@ body {
 }
 .item h3 {
   font-size: 28px;
-  color:darkred;
+  color: darkred;
 }
 .sports {
   width: 950px;
@@ -383,7 +380,7 @@ body {
 }
 .sport h3 {
   font-size: 26px;
-  color: #0a4d8c ;
+  color: #0a4d8c;
 }
 /* this is the subcriber details for all css files  */
 
@@ -447,13 +444,13 @@ this is the footer css for all the page
   float: left;
   width: 450px;
 }
-.footer-box1 h2{
-  color: darkred;
-} 
-.footer-box2 h2{
+.footer-box1 h2 {
   color: darkred;
 }
-.footer-box3 h2{
+.footer-box2 h2 {
+  color: darkred;
+}
+.footer-box3 h2 {
   color: darkred;
 }
 .footer-box2 {
