@@ -1,48 +1,25 @@
 <!doctype html>
 <html>
   <head>
-    <title> Youth programmes - Lucksman's Sports Academy</title>
+    <title>Youth programmes - Lucksman's Sports Academy</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
-      <img
-        class="logo"
-        src="assets/newn.png"
-      />
+      <img class="logo" src="Assest/newn.png" />
 
       <div class="menu">
-        <a
-          href="index.html"
-          >HOME</a
-        >
-        <a
-          href="about.html"
-          class="this-page"
-          >ABOUT</a
-        >
+        <a href="index.html">HOME</a>
+        <a href="about.html" class="this-page">ABOUT</a>
         <div class="dropdown">
           <a class="morethings" href="#">PROGRAMMES</a>
           <div class="dropdown-content">
-            <a
-              href="kids.html"
-              >KIDS PROGRAMMES</a
-            >
-            <a
-              href="youth.html"
-              >YOUTH PROGRAMMES</a
-            >
-
+            <a href="kids.html">KIDS PROGRAMMES</a>
+            <a href="youth.html">YOUTH PROGRAMMES</a>
           </div>
         </div>
-        <a
-          href="training.html"
-          >TRAINING</a
-        >
-        <a
-          href="cantact.html"
-          >CONTACT</a
-        >
+        <a href="training.html">TRAINING</a>
+        <a href="cantact.html">CONTACT</a>
       </div>
     </div>
 
@@ -52,7 +29,7 @@
 
     <div class="programme">
       <div class="left">
-        <h2>Youth training programme</h2>
+        <h2>Youth Training Programme</h2>
         <ul>
           <li>General Warming Up & Specific Warming Up Training Sessions.</li>
           <li>Basic Strength & Conditioning Training Sessions.</li>
@@ -60,29 +37,35 @@
           <li>Endurance Training Sessions.</li>
           <li>Plyometric Jump Training Sessions.</li>
           <li>Yoga Sessions.</li>
-         
         </ul>
       </div>
       <div class="rightu">
-        <img
-          src="assets/youth.png"
-        />
+        <img src="Assest/youth.png" />
       </div>
     </div>
-  <div class="subscribe">
+    <div class="subscribe">
       <hr />
-      <h2>Wish to know more about our trainings & classes? Subscribe now!</h2>
-      <input type="text" placeholder="Email address" />
-      <button>Subscribe</button>
+      <h2>
+        Wish to know more about our trainings &amp; classes? Subscribe now!
+      </h2>
+      <form
+        onsubmit="
+          event.preventDefault();
+          alert('Your email has been saved!');
+          this.reset();
+        "
+      >
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
-
     <div class="footer">
       <div class="footer-box1">
         <h2>Lucksman's Sports Academy</h2>
         <p>
-          At lucksman's Sports Academy, we are building the Olympians of Tomorrow. We
-          also provide intensive training for fitness & health of every
-          individual.
+          At lucksman's Sports Academy, we are building the Olympians of
+          Tomorrow. We also provide intensive training for fitness & health of
+          every individual.
         </p>
         <p><b>For Enquiries, drop by</b></p>
         <p>4, Gowriwakkam, Sembakkam, Chennai, Tamil Nadu - 600 073.</p>
@@ -132,9 +115,9 @@
       </div>
 
       <p class="copy">
-        Copyright © 2026 Lucksman's Sports Academy | Designed & Developed by lucksman
+        Copyright © 2026 Lucksman's Sports Academy | Designed & Developed by
+        lucksman
       </p>
     </div>
-   
   </body>
 </html>

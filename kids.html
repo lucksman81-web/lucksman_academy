@@ -1,71 +1,46 @@
 <!doctype html>
 <html>
   <head>
-    <title> Kids programmes - Lucksman's sports academy</s> Sports Academy</title>
+    <title>
+      Kids programmes - Lucksman's sports academy</s> Sports Academy
+    </title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="header">
-      <img
-        src="assets/newn.png"
-        alt="Lucksman sports"
-        class="logo"
-      />
+      <img src="Assest/newn.png" alt="Lucksman sports" class="logo" />
 
       <div class="menu">
-        <a
-          href="index.html"
-          >HOME</a
-        >
-        <a
-          href="about.html"
-          >ABOUT</a
-        >
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
 
-          <div class="dropdown">
+        <div class="dropdown">
           <a class="morethings" href="#">PROGRAMMES</a>
           <div class="dropdown-content">
-            <a
-              href="kids.html"
-              >KIDS PROGRAMMES</a
-            >
-            <a
-              href="youth.html"
-              >YOUTH PROGRAMMES</a
-            >
-
+            <a href="kids.html">KIDS PROGRAMMES</a>
+            <a href="youth.html">YOUTH PROGRAMMES</a>
           </div>
         </div>
-        <a
-          href="training.html"
-          >TRAINING</a
-        >
-        
+        <a href="training.html">TRAINING</a>
 
-        <a
-          href="cantact.html"
-          >CONTACT</a
-        >
+        <a href="cantact.html">CONTACT</a>
       </div>
     </div>
     <div class="top">
-      <h1>Kids Training Programmes</h1>
+      <h1>Training Programmes for kid's</h1>
     </div>
 
     <div class="programme">
       <div class="leftu">
-        <img
-          src="assets/kids .png"
-          alt="Kids training"
-        />
+        <img src="Assest/kids .png" alt="Kids training" />
       </div>
 
       <div class="rightu">
-        <h2>Kids Training Programme</h2>
+        <h2>Kid's Training Programme</h2>
         <ul>
-          <li>Basic Fundamental of Skills (Running, Jumping, Throwing).</li>
-          <li>Talent Identify Training Program.</li>
+          <li>Teaching fundamental Skills (Running, Jumping, Throwing).</li>
+          <li>Training programme to Identify Strengths and Talent</li>
           <li>Kids' Growth and Development Training Program.</li>
           <li>Brain and Nervous System Coordination Training Program.</li>
           <li>Yoga Training Session.</li>
@@ -82,28 +57,37 @@
         </ul>
       </div>
     </div>
-
-   <div class="subscribe">
+    <div class="subscribe">
       <hr />
-      <h2>Wish to know more about our trainings & classes? Subscribe now!</h2>
-      <input type="text" placeholder="Email address" />
-      <button>Subscribe</button>
+      <h2>
+        Wish to know more about our trainings &amp; classes? Subscribe now!
+      </h2>
+      <form
+        onsubmit="
+          event.preventDefault();
+          alert('Your email has been saved!');
+          this.reset();
+        "
+      >
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
 
     <div class="footer">
       <div class="footer-box1">
         <h2>Lucksman's Sports Academy</h2>
         <p>
-          At lucksman's Sports Academy, we are building the Olympians of Tomorrow. We
-          also provide intensive training for fitness & health of every
-          individual.
+          At Lucksman's Sports Academy, we are building the Olympians of
+          Tomorrow. We also provide intensive training for fitness & health of
+          every individual.
         </p>
         <p><b>For Enquiries, drop by</b></p>
         <p>4, Gowriwakkam, Sembakkam, Chennai, Tamil Nadu - 600 073.</p>
         <p>Arun Excello Temple Green H-6, Mathur, Tamil Nadu 631604</p>
         <p><b>Or Call us at</b></p>
-        <p>+91-95 0019 3582</p>
-        <p>+91-63 6931 0743</p>
+        <p>+91-95001 93582</p>
+        <p>+91-63693 10743</p>
       </div>
 
       <div class="footer-box2">
@@ -146,7 +130,8 @@
       </div>
 
       <p class="copy">
-        Copyright © 2026 Malai Sports Academy | Designed & Developed by Lucksman
+        Copyright © 2026 Lucksman's Sports Academy | Designed & Developed by
+        Lucksman
       </p>
     </div>
   </body>

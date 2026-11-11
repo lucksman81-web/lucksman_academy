@@ -10,7 +10,7 @@
       <div class="header">
         <img
           class="logo"
-          src="assets/newn.png"
+          src="Assest/newn.png"
         />
 
         <div class="menu">
@@ -76,7 +76,7 @@
       <div class="motto-box">
         <img
           class="rohit"
-          src="assets/climb.png"
+          src="Assest/climb.png"
         />
 
         <div class="motto-list">
@@ -142,12 +142,16 @@
           </p>
         </div>
       </div>
+    
       <div class="subscribe">
-        <hr />
-        <h2>Wish to know more about our trainings & classes? Subscribe now!</h2>
-        <input type="text" placeholder="Email address" />
-        <button>Subscribe</button>
-      </div>
+  <hr />
+  <h2>Wish to know more about our trainings & classes? Subscribe now!</h2>
+  <form onsubmit="event.preventDefault(); alert('Your email has been saved!'); this.reset();">
+    <input type="email" placeholder="Email address" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
 
       <div class="footer">
         <div class="footer-box1">

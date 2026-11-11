@@ -373,6 +373,7 @@ body {
   margin: 10px;
   text-align: center;
 }
+
 .sport img {
   width: 280px;
   height: 280px;
@@ -443,6 +444,7 @@ this is the footer css for all the page
 .footer-box1 {
   float: left;
   width: 450px;
+  letter-spacing: 0.7px;
 }
 .footer-box1 h2 {
   color: darkred;
